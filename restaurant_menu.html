@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uni-Food Restaurant</title>
+    <style>
+        body {
+           
+            background-color: #ffb3b3;}
+        article img {
+            width: 150px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-right: 20px;
+
+        }
+        nav ul {
+            padding: 0px;
+            background: #b74646;
+            text-align: center;
+        }
+        nav li {
+            display:inline
+        }
+        nav a {
+            display: inline-block;
+            padding: 15px;
+            color: #fef2f2;
+            text-decoration: none;
+            
+        }
+        nav a:hover {
+            background: #140303;
+        }
+        main {
+            text-align: center;
+        }
+        h1{
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: #f09090;
+            padding: 10px;
+        }
+       
+      
+    </style>
+    
+</head>
+<body>
+    <header>
+        <h1>Welcome to Uni-Food Restaurant</h1>
+        <img id="header-img" src="Free  Wallpaper, Simple, Food Background Images, Simple Food Black Background Psd Layered Banner Photo Background PNG and Vectors.jpg" alt="image" width="1700" height="300">
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#order-form">Place Your Order</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="menu">
+        <h2>Menu</h2>
+        <article>
+            <img src="Yummy Burger 🍔🍔🍔.jpg" alt="burger" >
+            <div>
+            <h3>Burger</h3>
+            <p>A delicious beef burger with fresh lettuce, tomato, and cheese.</p>
+            </div>
+        </article>
+       <article>
+            <img src="Grilled Veggie Cheese Sandwich Delight - Grill Recipes.jpg" alt="Sandwich" >
+            <div>
+            <h3>Grilled Veggie Cheese Sandwich</h3>
+            <p>A delightful sandwich filled with grilled vegetables and melted cheese.</p>
+            </div>
+        </article>
+        <article>
+            <img src="Feast your eyes on this mouthwatering plate of golden French fries 🍟🔥.jpg" alt="french fries" >
+            <div>
+            <h3>French Fries</h3>
+            <p>Crispy golden French fries, perfectly seasoned and served hot.</p>
+            </div>
+        </article>
+        </section>
+        <section id="order-form">
+            <h2>Place Your Order</h2>
+            <form>
+                
+                <div>
+                    <label >Burger:</label>
+                    <input type="number" min="0" value="0">
+                </div>
+                
+                    <h3>Side for Uni Cream Pasta (select one):</h3>
+                    <div>
+                        <input type="radio" id="side_salad" name="pasta_side" value="salad">
+                        <label for="side_salad">Side Salad</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="side_soup" name="pasta_side" value="soup">
+                        <label for="side_soup">Miso Soup</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="side_none" name="pasta_side" value="none" checked>
+                        <label for="side_none">No Side</label>
+                    </div>
+                
+
+                
+                    <h3>Sashimi Platter Add-ons (select any):</h3>
+                    <div>
+                        <input type="checkbox" id="add_wasabi" name="add_on_wasabi" value="wasabi">
+                        <label for="add_wasabi">Extra Wasabi (+₹1.00)</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="add_ikura" name="add_on_ikura" value="ikura">
+                        <label for="add_ikura">Add Ikura (Salmon Roe) (+₹4.00)</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="add_quail_egg" name="add_on_quail_egg" value="quail_egg">
+                        <label for="add_quail_egg">Add Quail Egg (+₹2.00)</label>
+                        <br><br>
+                    </div>
+                <div>
+                    <label for="special_requests">Special Requests (e.g., allergies, no sauce):</label><br><br>
+                    <textarea id="special_requests" name="special_requests" rows="4" cols="50" placeholder="Let us know about any allergies..."></textarea>
+                </div>
+                <br><br>
+                
+                <input type="submit" value="Go To Checkout">
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
